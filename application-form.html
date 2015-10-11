@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Skills-HTML-CSS</title>
+        <link href="/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Application Form</h2>
+        <p>Please complete the following application. All fields are required.
+        </p><br><br>
+        <form action="/application" method="POST">
+            <label>First Name
+                <input type="text" name="firstname" placeholder="First Name" value="">
+            </label><br><br>
+            <label>Last Name
+                <input type="text" name="lastname" placeholder="Last Name" value="">
+            </label><br><br>
+            <label>Salary Desired (in US$)
+                <input type="text" name="salary" placeholder="90000" value="">
+            </label><br><br>
+            <label>Position Sought
+                <select name="job-title">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                </select>
+            </label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
